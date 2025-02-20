@@ -46,8 +46,8 @@ console.log(secondarySchoolLocationIs)
 
 
 //-------------------------------------------------- task 2: ---------------------------------------------------
-// console.log kortee hobe dhaka k
-/* (red color) value ta accss korte hobe. */
+// console.log kortee hobe california k & country (UK) K
+/* (red color) value ta accss korte hobe.ERPOR ABR (DC ROAD) value taw access korte hobe. */
 let student = {
     2222: {
         name: "jack",
@@ -56,7 +56,7 @@ let student = {
         address: {
             "building no": 12,
             'street': "st jonson",
-            "city": "dhaka",
+            "city holo": "california",
             "country": 'UK',
         }
     },
@@ -69,17 +69,47 @@ let student = {
             address: {
                 "building no": 85,
                 "street no": "DC ROAD",
-                "city": "kochu khet",
+                "city holo": "kochu khet",
                 "country": "bangladesh",
             },
         },
 
-      {
-     isred: true,
-     color:'red color',
-      }
+        {
+            isred: true,
+            color: 'red color',
+            "tar chele asee": [
+                { 
+                    "1st boy": 'sahil',
+                    study1: [
+                      {
+                        primary:   
+                        {name:'ddd primary school',
+                            location:'calofornia',
+                        },
+                        secondary:   
+                        {name:'ttt socondary school',
+                            location:'calofornia',
+                        },
+                      }
+                       
+                    ]
+                
+                },
+            ],
+        }
     ]
 }
 
-const dhakaIs =
+const dhakaIs = student["2222"].address?.["city holo"];//california
+const dhakaCountry = student["2222"].address?.country;//UK
 console.log(dhakaIs)
+console.log(dhakaCountry)
+
+
+// (DC ROAD) access:
+const dc = student[3333][0]?.address?.['street no'];//DC ROAD
+console.log(dc)
+
+// (ttt socondary school) console e dekatee hobe.
+ const tttSchool = student[3333]
+ console.log(tttSchool)
