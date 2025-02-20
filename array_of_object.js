@@ -44,3 +44,8 @@ console.log(komDamiLaptop)
 
 const komDamirModdeProtomta = laptops.find(lap1kore => lap1kore.price <41000);// { id: 2, name: 'lenovo', price: 35000 }
 console.log(komDamirModdeProtomta);
+
+
+// examplee of reduce() 6:
+const total = laptops.reduce( (accum,current) => accum + current.price , 0);
+console.log(total)// 265000

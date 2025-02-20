@@ -9,12 +9,12 @@ array er prottekta element k er jei oparetion ta  korte bola hobe seta kore tota
 
 // example 2:
 const numbers1 = [2,3,4,5];
-const total1 =numbers1.reduce((x , y) => x*y);
+const total1 =numbers1.reduce((x , y) => x*y , 0);//ekanee 0 ta hocce initial value
 //    total1 = 120
 console.log(total1)
 
 
 const friends = [20,20,20];
 // const totalResult = friends.reduce(( a , b) => a.length === b.length);// =false
-const totalResult = friends.reduce(( a , b) => a + b );// = 60
+const totalResult = friends.reduce(( a , b) => a + b , 0);// = 60
 console.log(totalResult)
