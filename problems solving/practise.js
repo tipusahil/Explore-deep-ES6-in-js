@@ -72,9 +72,9 @@ let student = {
                 "city holo": "kochu khet",
                 "country": "bangladesh",
             },
-        },
+        
 
-        {
+       
             isred: true,
             color: 'red color',
             "tar chele asee": [
@@ -90,13 +90,13 @@ let student = {
                         {name:'ttt socondary school',
                             location:'calofornia',
                         },
-                      }
+                      },
                        
-                    ]
+                    ],
                 
                 },
             ],
-        }
+        },
     ]
 }
 
@@ -111,5 +111,16 @@ const dc = student[3333][0]?.address?.['street no'];//DC ROAD
 console.log(dc)
 
 // (ttt socondary school) console e dekatee hobe.
- const tttSchool = student[3333]
+
+ /*  
+  const tttSchool = student[3333][0]["tar chele asee"][0].study1;
+  output: 
+ {
+    primary: { name: 'ddd primary school', location: 'calofornia' },
+    secondary: { name: 'ttt socondary school', location: 'calofornia' }
+  } */
+
+//  const tttSchool = student[3333][0]["tar chele asee"][0].study1[0].secondary;//output: { name: 'ttt socondary school', location: 'calofornia' }
+
+ const tttSchool = student[3333][0]["tar chele asee"][0].study1[0].secondary.name;//output: ttt socondary school
  console.log(tttSchool)
